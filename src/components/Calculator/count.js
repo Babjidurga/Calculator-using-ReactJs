@@ -17,7 +17,7 @@ const Calculator = () => {
 
         <div className='buttons-container'>
           <div className='same'>
-          <button onClick={()=>setInput(input+"1")}>1</button>
+            <button onClick={()=>setInput(input+"1")}>1</button>
             <button onClick={()=>setInput(input+"2")}>2</button>
             <button onClick={()=>setInput(input+"3")}>3</button>
             
@@ -39,13 +39,17 @@ const Calculator = () => {
             <button onClick={()=>setInput(input+"-")}>-</button>
             <button onClick={()=>setInput(input+"/")}>/</button>
           </div>
-          <div className='last'>
+          <div className='same'>
+              <button onClick={()=>setInput(input+"*")}>*</button>
               <button onClick={()=>setInput(input+"0")}>0</button>
-              <button onClick={()=>setInput("")} className='clear' >Clear</button>
+              <button onClick={()=>setInput("")} >C</button>
           </div>
-          
-          
-          
+          <div className='same'>
+              <button onClick={()=>setInput(input+"**")}>^</button>
+              <button onClick={()=>setInput(input+"(")}>(</button>
+              <button onClick={()=>setInput(input+")")}>)</button>
+
+          </div>
         </div>
     </div>
   )
